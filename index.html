@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Visionary Vault - The Premier Technical Club of NIET | Innovate, Integrate, Inspire | Fostering Tech Excellence, Hackathons, Projects & Skill Development">
+    <meta name="keywords" content="Visionary Vault, The Visionary Vault, NIET, Technical Club, Hackathons, Coding Club, Web Development, Artificial Intelligence, Machine Learning, Open Source, Greater Noida">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for High-Tech Components -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <div class="announcement-container">
+            <div class="scrolling-text">
+                <span class="scroll-content">
+                    <i class="fas fa-bullhorn"></i> Annual Member & Core Team Recruitments 2026 Open - Apply Now! &nbsp;|&nbsp;
+                    <i class="fas fa-laptop-code"></i> HackVault 2026: 36-Hour National Hackathon Registrations Live! &nbsp;|&nbsp;
+                    <i class="fas fa-trophy"></i> Visionary Vault Ranked Among Top College Technical Societies &nbsp;|&nbsp;
+                    <i class="fas fa-bullhorn"></i> Annual Member & Core Team Recruitments 2026 Open - Apply Now! &nbsp;|&nbsp;
+                    <i class="fas fa-laptop-code"></i> HackVault 2026: 36-Hour National Hackathon Registrations Live! &nbsp;|&nbsp;
+                    <i class="fas fa-trophy"></i> Visionary Vault Ranked Among Top College Technical Societies
+                </span>
+            </div>
+            <div class="announcement-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fas fa-terminal"></i> Dev Portal</a>
+                <a href="#"><i class="fas fa-sign-in-alt"></i> Member Login</a>
+                <div class="social-icons">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Twitter / X"><i class="fab fa-twitter"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <header class="main-header" id="mainHeader">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Logo.jpeg" alt="The Visionary Vault Logo" class="logo-img">
+                    <div class="logo-text">
+                        <span class="logo-nss">VISIONARY</span>
+                        <span class="logo-niet">Vault &bull; NIET Tech Club</span>
+                    </div>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#about">About The Vault</a></li>
+                            <li><a href="#objectives">Core Pillars</a></li>
+                            <li><a href="#leadership">Leadership & Faculty</a></li>
+                            <li><a href="#benefits">Why Join Us</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Domains & Projects <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#projects">Web & App Development</a></li>
+                            <li><a href="#projects">AI & Machine Learning</a></li>
+                            <li><a href="#projects">Competitive Programming</a></li>
+                            <li><a href="#projects">Cloud & Cyber Security</a></li>
+                            <li><a href="#projects">IoT & Embedded Systems</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Events & Gallery <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#events">HackVault Hackathon</a></li>
+                            <li><a href="#events">Workshops & Masterclasses</a></li>
+                            <li><a href="#events">Bootcamps & Sprints</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#join" class="nav-link btn-join">Join Us</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('NIET.webp')"></div>
+            <div class="slide" style="background-image: url('NIET.webp')"></div>
+            <div class="slide" style="background-image: url('NIET.webp')"></div>
+            <div class="slide" style="background-image: url('NIET.webp')"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-code-branch"></i> Noida Institute of Engineering and Technology
+            </div>
+            <h1 class="hero-title">The Visionary Vault<br><span>NIET's Premier Technical Club</span></h1>
+            <p class="hero-subtitle">Motto: "Innovate, Integrate, Inspire" - Fostering technical excellence, hackathon culture, open-source innovation, and future-ready software engineers.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-outline">
+                    <i class="fas fa-compass"></i> Explore Domains
+                </a>
+                <a href="#join" class="btn btn-primary">
+                    <i class="fas fa-user-plus"></i> Join The Vault
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="800">0</span>+
+                    <span class="stat-label">Active Coders & Members</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="60">0</span>+
+                    <span class="stat-label">Hackathons & Events</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="45">0</span>+
+                    <span class="stat-label">Live Tech Projects</span>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <!-- About & Motto Section -->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About The Visionary Vault</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text-box">
+                        <h3>Empowering Student Innovators & Engineering Future Tech Leaders</h3>
+                        <p>The Visionary Vault is the flagship student-driven technical society at Noida Institute of Engineering and Technology (NIET), Greater Noida. Founded with a vision to bridge the gap between classroom academics and rapidly evolving industry paradigms, we cultivate an ecosystem of continuous technical exploration, hands-on building, and collaborative problem-solving.</p>
+                        <p>Our club acts as an innovation hub for passionate coders, full-stack builders, AI researchers, cybersecurity defenders, and UI/UX designers. From building production-grade open-source applications and competing in high-stakes national hackathons like Smart India Hackathon (SIH) to conducting intensive bootcamps, we equip technocrats to solve complex challenges.</p>
+                        <p>Our guiding philosophy — "Innovate, Integrate, Inspire" — reflects our devotion to engineering impactful software solutions, upholding open-source collaboration, and providing transformative peer mentorship.</p>
+                        <div class="about-features">
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Real-World Projects</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Hackathon & SIH Mentorship</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Open Source Contributions</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Industry Tech Masterclasses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-badge-card">
+                    <div class="badge-card">
+                        <div class="badge-icon">
+                            <img src="Logo.jpeg" alt="The Visionary Vault Emblem" class="rounded-xl shadow-md border border-slate-200">
+                        </div>
+                        <h4>The Visionary Vault Philosophy</h4>
+                        <div class="badge-description">
+                            <div class="badge-item">
+                                <div class="badge-color navy"></div>
+                                <div>
+                                    <h5>Innovate</h5>
+                                    <p>Driving cutting-edge exploration in Artificial Intelligence, Cloud Systems, and Modern Web Stacks</p>
+                                </div>
+                            </div>
+                            <div class="badge-item">
+                                <div class="badge-color red"></div>
+                                <div>
+                                    <h5>Integrate</h5>
+                                    <p>Uniting multi-disciplinary developers, designers, and problem solvers to build scalable products</p>
+                                </div>
+                            </div>
+                            <div class="badge-item">
+                                <div class="badge-icon-small">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div>
+                                    <h5>Inspire</h5>
+                                    <p>Fostering peer-to-peer coding culture, competitive problem solving, and technical leadership</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Objectives Section -->
+    <section class="objectives-section section" id="objectives">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Mission</span>
+                <h2 class="section-title">Core Pillars & Objectives</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Hands-On Technical Mastery</h4>
+                    <p>Equip students with industry-standard skills in Full-Stack Web, Mobile Apps, Cloud Native Architecture, and Machine Learning through hands-on labs.</p>
+                    <span class="objective-number">01</span>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Algorithmic Problem Solving</h4>
+                    <p>Cultivate advanced data structures and algorithms competencies for competitive programming contests, ICPC, and elite tech hiring rounds.</p>
+                    <span class="objective-number">02</span>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h4>Open Source & Collaboration</h4>
+                    <p>Promote active contributions to open-source ecosystems, Git/GitHub collaborative workflows, and global initiatives like GSoC and Hacktoberfest.</p>
+                    <span class="objective-number">03</span>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h4>Hackathon Excellence</h4>
+                    <p>Nurture high-performing multidisciplinary teams to participate and triumph in national & international hackathons like SIH, ETHIndia, and MLH.</p>
+                    <span class="objective-number">04</span>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Cybersecurity & Cloud</h4>
+                    <p>Instill strong foundations in cybersecurity, ethical hacking, cloud infrastructure, and IoT embedded systems for robust product engineering.</p>
+                    <span class="objective-number">05</span>
+                </div>
+                <div class="objective-card">
+                    <div class="objective-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4>Peer Mentorship & Career Readiness</h4>
+                    <p>Deliver structured senior-to-junior mentorship, resume audits, mock technical interviews, and direct guidance for high-impact tech internships.</p>
+                    <span class="objective-number">06</span>
+                </div>
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="benefits-section" id="benefits">
+                <div class="section-header">
+                    <span class="section-tag">Why Join The Vault?</span>
+                    <h2 class="section-title">Benefits of Membership</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-badge">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h5>Real-World Portfolio</h5>
+                        <p>Build production-level, deployable projects with modern tech stacks that make your GitHub profile stand out to recruiters.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-badge">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5>Hackathon Teaming</h5>
+                        <p>Find driven teammates and receive dedicated guidance from past hackathon champions and technical leads.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-badge">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h5>Exclusive Masterclasses</h5>
+                        <p>Get exclusive access to member-only masterclasses on AI, LLMs, DevOps, System Design, and UI/UX engineering.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-badge">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h5>Verified Credentials</h5>
+                        <p>Earn official club certificates, project completion credentials, and leadership badges for your professional resume.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-badge">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h5>Elite Tech Network</h5>
+                        <p>Connect directly with NIET alumni working at top tech firms, fast-growing startups, and research institutions.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-badge">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h5>Leadership & Growth</h5>
+                        <p>Gain valuable experience leading technical wings, organizing large-scale tech symposiums, and accelerating your career.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Faculty Oversight Section (Matching Clean Theme) -->
+    <section class="leadership-section section bg-white text-slate-800" id="leadership">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-tag">Mentorship & Leadership</span>
+                <h2 class="section-title">Leadership & Faculty Oversight</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- LEVEL 1: Faculty Leadership (2 Wide Cards) -->
+            <div class="mb-16">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="w-10 h-10 rounded-xl bg-blue-50 border border-blue-200 text-blue-900 flex items-center justify-center font-bold">
+                        <i class="fas fa-chalkboard-teacher text-blue-800"></i>
+                    </span>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#1a365d] tracking-wide">Faculty Coordinators & Advisory Board</h3>
+                        <p class="text-xs sm:text-sm text-slate-500">Academic mentorship, institutional incubation, and strategic technology direction.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Faculty Card 1 -->
+                    <div class="group relative rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl p-6 sm:p-8 transition-all duration-300 hover:border-red-500/40 hover:-translate-y-1">
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                            <!-- Image Frame with Accent Ring -->
+                            <div class="relative flex-shrink-0">
+                                <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-2 ring-blue-900/20 group-hover:ring-red-600 transition-all duration-300 shadow-md">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Dr. Rajesh Kumar Sharma" class="w-full h-full object-cover">
+                                </div>
+                                <span class="absolute -bottom-2 -right-2 bg-[#1a365d] text-white p-1.5 rounded-lg text-xs font-bold shadow-md" title="Senior Mentor">
+                                    <i class="fas fa-star text-xs"></i>
+                                </span>
+                            </div>
+
+                            <!-- Text & Details -->
+                            <div class="flex-1 text-center sm:text-left">
+                                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-blue-50 text-blue-900 border border-blue-200 mb-2">
+                                    Faculty Coordinator & Chief Advisor
+                                </span>
+                                <h4 class="text-2xl font-bold text-[#1a365d] mb-1 group-hover:text-[#c41e3a] transition-colors">Dr. Rajesh K. Sharma</h4>
+                                <p class="text-sm font-medium text-slate-600 mb-3">Professor & Head of Department, Computer Science & Engineering</p>
+                                
+                                <p class="text-slate-600 text-sm italic leading-relaxed mb-5 border-l-2 border-red-500/40 pl-3">
+                                    "Our mission is to foster a rigorous environment of fearless problem-solving and software craftsmanship, transforming academic potential into globally competitive tech leadership."
+                                </p>
+
+                                <!-- Social / Profile Links with Tooltips -->
+                                <div class="flex items-center justify-center sm:justify-start gap-3">
+                                    <a href="#" class="group/btn relative w-9 h-9 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-all duration-200 shadow-sm">
+                                        <i class="fab fa-linkedin-in text-sm"></i>
+                                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[11px] px-2 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">LinkedIn</span>
+                                    </a>
+                                    <a href="#" class="group/btn relative w-9 h-9 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-all duration-200 shadow-sm">
+                                        <i class="fas fa-graduation-cap text-sm"></i>
+                                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[11px] px-2 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">Google Scholar</span>
+                                    </a>
+                                    <a href="mailto:rajesh.sharma@niet.co.in" class="group/btn relative w-9 h-9 rounded-lg bg-slate-100 hover:bg-[#c41e3a] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-all duration-200 shadow-sm">
+                                        <i class="fas fa-envelope text-sm"></i>
+                                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[11px] px-2 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">Email</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Faculty Card 2 -->
+                    <div class="group relative rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl p-6 sm:p-8 transition-all duration-300 hover:border-red-500/40 hover:-translate-y-1">
+                        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+                            <!-- Image Frame with Accent Ring -->
+                            <div class="relative flex-shrink-0">
+                                <div class="w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-2 ring-blue-900/20 group-hover:ring-red-600 transition-all duration-300 shadow-md">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" alt="Dr. Ananya Verma" class="w-full h-full object-cover">
+                                </div>
+                                <span class="absolute -bottom-2 -right-2 bg-[#c41e3a] text-white p-1.5 rounded-lg text-xs font-bold shadow-md" title="Innovation Lead">
+                                    <i class="fas fa-lightbulb text-xs"></i>
+                                </span>
+                            </div>
+
+                            <!-- Text & Details -->
+                            <div class="flex-1 text-center sm:text-left">
+                                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold tracking-wider uppercase bg-red-50 text-red-700 border border-red-200 mb-2">
+                                    Faculty Co-Coordinator & Innovation Lead
+                                </span>
+                                <h4 class="text-2xl font-bold text-[#1a365d] mb-1 group-hover:text-[#c41e3a] transition-colors">Dr. Ananya Verma</h4>
+                                <p class="text-sm font-medium text-slate-600 mb-3">Associate Professor & AI/ML Research Lead, IT Department</p>
+                                
+                                <p class="text-slate-600 text-sm italic leading-relaxed mb-5 border-l-2 border-red-500/40 pl-3">
+                                    "By cultivating multi-disciplinary collaboration and open-source contributions, we ensure our students build deployable, high-impact innovations that redefine technological frontiers."
+                                </p>
+
+                                <!-- Social / Profile Links with Tooltips -->
+                                <div class="flex items-center justify-center sm:justify-start gap-3">
+                                    <a href="#" class="group/btn relative w-9 h-9 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-all duration-200 shadow-sm">
+                                        <i class="fab fa-linkedin-in text-sm"></i>
+                                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[11px] px-2 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">LinkedIn</span>
+                                    </a>
+                                    <a href="#" class="group/btn relative w-9 h-9 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-all duration-200 shadow-sm">
+                                        <i class="fas fa-graduation-cap text-sm"></i>
+                                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[11px] px-2 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">Google Scholar</span>
+                                    </a>
+                                    <a href="mailto:ananya.verma@niet.co.in" class="group/btn relative w-9 h-9 rounded-lg bg-slate-800/80 hover:bg-[#c41e3a] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-all duration-200 shadow-sm">
+                                        <i class="fas fa-envelope text-sm"></i>
+                                        <span class="absolute -top-8 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[11px] px-2 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">Email</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LEVEL 2: Executive Board (3 Featured Cards: President + 2 Vice Presidents) -->
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="w-10 h-10 rounded-xl bg-red-50 border border-red-200 text-red-600 flex items-center justify-center font-bold">
+                        <i class="fas fa-users-cog text-[#c41e3a]"></i>
+                    </span>
+                    <div>
+                        <h3 class="text-xl font-bold text-[#1a365d] tracking-wide">Executive Board</h3>
+                        <p class="text-xs sm:text-sm text-slate-500">Directing club strategy, flagship hackathons, developer initiatives, and student operations.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- President Card -->
+                    <div class="group relative rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl p-6 transition-all duration-300 hover:border-red-500/40 hover:-translate-y-1 flex flex-col justify-between">
+                        <div>
+                            <!-- Top Profile & Badges -->
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="relative flex-shrink-0">
+                                    <div class="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-red-600/20 group-hover:ring-red-600 transition-all duration-300 shadow-md">
+                                        <img src="Raghvendra.png" alt="Raghvendra - President" class="w-full h-full object-cover object-top">
+                                    </div>
+                                    <span class="absolute -bottom-2 -right-1 bg-[#c41e3a] text-white px-1.5 py-0.5 rounded text-[10px] font-bold shadow-md">
+                                        PREZ
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-red-50 text-red-700 border border-red-200 mb-1">
+                                        Club President
+                                    </span>
+                                    <h4 class="text-xl font-bold text-[#1a365d] group-hover:text-[#c41e3a] transition-colors leading-tight">Raghvendra</h4>
+                                    <span class="text-xs text-slate-500 font-medium block mt-1">B.Tech CSE • Final Year</span>
+                                </div>
+                            </div>
+
+                            <p class="text-xs font-semibold text-slate-700 mb-2">Full-Stack Architect & National Hackathon Finalist</p>
+                            <p class="text-slate-600 text-xs italic leading-relaxed mb-4 border-l-2 border-red-500/40 pl-3">
+                                "We lead by shipping code. Our vision is to empower every student to build production-level software that solves real-world challenges."
+                            </p>
+                        </div>
+
+                        <!-- Portfolio & Social Links -->
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Connect</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fab fa-github text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">GitHub</span>
+                                </a>
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fab fa-linkedin-in text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">LinkedIn</span>
+                                </a>
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#c41e3a] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fas fa-globe text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">Portfolio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vice President Card 1: Sneha Patel -->
+                    <div class="group relative rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl p-6 transition-all duration-300 hover:border-blue-500/40 hover:-translate-y-1 flex flex-col justify-between">
+                        <div>
+                            <!-- Top Profile & Badges -->
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="relative flex-shrink-0">
+                                    <div class="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-blue-900/20 group-hover:ring-blue-800 transition-all duration-300 shadow-md">
+                                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80" alt="Sneha Patel - Vice President" class="w-full h-full object-cover">
+                                    </div>
+                                    <span class="absolute -bottom-2 -right-1 bg-[#1a365d] text-white px-1.5 py-0.5 rounded text-[10px] font-bold shadow-md">
+                                        VP
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-blue-50 text-blue-900 border border-blue-200 mb-1">
+                                        Vice President
+                                    </span>
+                                    <h4 class="text-xl font-bold text-[#1a365d] group-hover:text-blue-900 transition-colors leading-tight">Sneha Patel</h4>
+                                    <span class="text-xs text-slate-500 font-medium block mt-1">B.Tech IT • 3rd Year</span>
+                                </div>
+                            </div>
+
+                            <p class="text-xs font-semibold text-slate-700 mb-2">AI / ML Lead & Community Operations</p>
+                            <p class="text-slate-600 text-xs italic leading-relaxed mb-4 border-l-2 border-blue-500/40 pl-3">
+                                "Creating an inclusive, fast-paced technical culture where every member receives the mentorship to excel in global engineering arenas."
+                            </p>
+                        </div>
+
+                        <!-- Portfolio & Social Links -->
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Connect</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fab fa-github text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">GitHub</span>
+                                </a>
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fab fa-linkedin-in text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">LinkedIn</span>
+                                </a>
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fas fa-globe text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">Portfolio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vice President Card 2: Kabir Singhania -->
+                    <div class="group relative rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-xl p-6 transition-all duration-300 hover:border-emerald-500/40 hover:-translate-y-1 flex flex-col justify-between">
+                        <div>
+                            <!-- Top Profile & Badges -->
+                            <div class="flex items-start gap-4 mb-4">
+                                <div class="relative flex-shrink-0">
+                                    <div class="w-20 h-20 rounded-2xl overflow-hidden ring-2 ring-emerald-600/20 group-hover:ring-emerald-600 transition-all duration-300 shadow-md">
+                                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80" alt="Kabir Singhania - Vice President" class="w-full h-full object-cover">
+                                    </div>
+                                    <span class="absolute -bottom-2 -right-1 bg-emerald-700 text-white px-1.5 py-0.5 rounded text-[10px] font-bold shadow-md">
+                                        VP
+                                    </span>
+                                </div>
+                                <div>
+                                    <span class="inline-block px-2.5 py-0.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 mb-1">
+                                        Vice President
+                                    </span>
+                                    <h4 class="text-xl font-bold text-[#1a365d] group-hover:text-emerald-800 transition-colors leading-tight">Kabir Singhania</h4>
+                                    <span class="text-xs text-slate-500 font-medium block mt-1">B.Tech CSE • 3rd Year</span>
+                                </div>
+                            </div>
+
+                            <p class="text-xs font-semibold text-slate-700 mb-2">Systems Architect & Hackathon Lead</p>
+                            <p class="text-slate-600 text-xs italic leading-relaxed mb-4 border-l-2 border-emerald-500/40 pl-3">
+                                "Driving competitive programming bootcamps and team sprints to put NIET on the leaderboard of premier national hackathons."
+                            </p>
+                        </div>
+
+                        <!-- Portfolio & Social Links -->
+                        <div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">Connect</span>
+                            <div class="flex items-center gap-2">
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fab fa-github text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">GitHub</span>
+                                </a>
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-[#1a365d] text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fab fa-linkedin-in text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">LinkedIn</span>
+                                </a>
+                                <a href="#" class="group/btn relative w-8 h-8 rounded-lg bg-slate-100 hover:bg-emerald-700 text-slate-600 hover:text-white flex items-center justify-center border border-slate-200 transition-colors shadow-sm">
+                                    <i class="fas fa-globe text-xs"></i>
+                                    <span class="absolute -top-7 left-1/2 -translate-x-1/2 opacity-0 group-hover/btn:opacity-100 transition-opacity bg-slate-900 text-white text-[10px] px-1.5 py-0.5 rounded shadow-md pointer-events-none whitespace-nowrap">Portfolio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Major Projects Section -->
+    <section class="projects-section section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Build</span>
+                <h2 class="section-title">Flagship Projects & Domains</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/1a365d/ffffff?text=CampusConnect+Portal" alt="CampusConnect Platform">
+                        <span class="project-tag education">Web & App Dev</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span><i class="fas fa-code"></i> React &bull; Node.js &bull; PostgreSQL</span>
+                            <span><i class="fas fa-laptop-code"></i> Live Production</span>
+                        </div>
+                        <h4>CampusConnect Platform</h4>
+                        <p>A unified campus ecosystem for event registration, club recruitments, real-time announcements, and peer project matchmaking.</p>
+                        <a href="#join" class="project-link">Explore Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/228B22/ffffff?text=VisionAI+Analytics" alt="VisionAI Proctor & Analytics">
+                        <span class="project-tag environment">AI & ML</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span><i class="fas fa-brain"></i> Python &bull; PyTorch &bull; OpenCV</span>
+                            <span><i class="fas fa-flask"></i> Research Project</span>
+                        </div>
+                        <h4>VisionAI Proctor & Analytics</h4>
+                        <p>Computer vision and deep learning model for real-time engagement analytics, automated code checking, and smart academic assistance.</p>
+                        <a href="#join" class="project-link">Explore Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/8B4513/ffffff?text=CodeVault+Arena" alt="CodeVault Arena">
+                        <span class="project-tag rural">Competitive Coding</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span><i class="fas fa-terminal"></i> C++ &bull; Python &bull; Java</span>
+                            <span><i class="fas fa-trophy"></i> Weekly Contests</span>
+                        </div>
+                        <h4>CodeVault Arena</h4>
+                        <p>Internal algorithmic contest platform hosting curated LeetCode-style problem sets, speed debugging rounds, and college leaderboards.</p>
+                        <a href="#join" class="project-link">Explore Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/8b1a1a/ffffff?text=Cloud+DevOps+Sandbox" alt="DevSecOps Cloud Sandbox">
+                        <span class="project-tag health">Cloud & Security</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span><i class="fas fa-cloud"></i> Docker &bull; K8s &bull; AWS</span>
+                            <span><i class="fas fa-shield-alt"></i> Hands-on Labs</span>
+                        </div>
+                        <h4>DevSecOps Cloud Sandbox</h4>
+                        <p>Containerized cloud security sandbox for teaching ethical hacking, CTF challenges, microservices architecture, and CI/CD pipelines.</p>
+                        <a href="#join" class="project-link">Explore Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/FF6347/ffffff?text=HackVault+Hackathon" alt="HackVault 36H Hackathon">
+                        <span class="project-tag celebration">Flagship Hackathon</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> Annual 36-Hour Sprint</span>
+                            <span><i class="fas fa-map-marker-alt"></i> NIET Auditorium</span>
+                        </div>
+                        <h4>HackVault 2026 Hackathon</h4>
+                        <p>NIET's premier national hackathon bringing together over 500+ student developers to prototype breakthrough software and hardware solutions.</p>
+                        <a href="#events" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4682B4/ffffff?text=Smart+Campus+IoT" alt="Smart Campus IoT Mesh">
+                        <span class="project-tag environment">IoT & Robotics</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-meta">
+                            <span><i class="fas fa-microchip"></i> ESP32 &bull; MQTT &bull; WebSockets</span>
+                            <span><i class="fas fa-wifi"></i> Campus Deployment</span>
+                        </div>
+                        <h4>Smart Campus IoT Mesh</h4>
+                        <p>Energy-efficient wireless sensor grid for automated laboratory power monitoring, environmental tracking, and smart resource management.</p>
+                        <a href="#join" class="project-link">Explore Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Gallery Section -->
+    <section class="events-section section" id="events">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Tech In Action</span>
+                <h2 class="section-title">Flagship Events & Gallery</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="events-filter">
+                <button class="filter-btn active" data-filter="all">All Events</button>
+                <button class="filter-btn" data-filter="camp">Hackathons</button>
+                <button class="filter-btn" data-filter="celebration">Workshops</button>
+                <button class="filter-btn" data-filter="awareness">Bootcamps</button>
+            </div>
+            <div class="events-gallery">
+                <div class="gallery-item" data-category="camp">
+                    <img src="https://via.placeholder.com/350x250/1a365d/ffffff?text=HackVault+2026" alt="HackVault 36-Hour Hackathon">
+                    <div class="gallery-overlay">
+                        <span class="gallery-date">February 15-16, 2026</span>
+                        <h5>HackVault 36H Hackathon</h5>
+                        <p>36 hours of non-stop coding, ideation, and mentoring with 500+ participants across India</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="camp">
+                    <img src="https://via.placeholder.com/350x250/228B22/ffffff?text=SIH+Internal+Sprint" alt="SIH Internal Hackathon">
+                    <div class="gallery-overlay">
+                        <span class="gallery-date">March 20-22, 2026</span>
+                        <h5>Smart India Hackathon Sprint</h5>
+                        <p>Internal evaluation and mentoring sprint selecting NIET teams for national grand finale</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="celebration">
+                    <img src="https://via.placeholder.com/350x250/8b1a1a/ffffff?text=Generative+AI+Summit" alt="Generative AI Masterclass">
+                    <div class="gallery-overlay">
+                        <span class="gallery-date">November 10, 2025</span>
+                        <h5>Generative AI & LLM Summit</h5>
+                        <p>Hands-on session on LangChain, RAG architecture, and fine-tuning open-source LLMs</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="awareness">
+                    <img src="https://via.placeholder.com/350x250/FF6347/ffffff?text=Full+Stack+Bootcamp" alt="Full Stack Bootcamp">
+                    <div class="gallery-overlay">
+                        <span class="gallery-date">October 18-20, 2025</span>
+                        <h5>Full Stack & DevOps Bootcamp</h5>
+                        <p>3-day intensive zero-to-hero workshop covering Next.js, Docker, and CI/CD pipelines</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="celebration">
+                    <img src="https://via.placeholder.com/350x250/4682B4/ffffff?text=CyberSecurity+CTF" alt="Cyber Security CTF">
+                    <div class="gallery-overlay">
+                        <span class="gallery-date">December 05, 2025</span>
+                        <h5>Capture The Flag (CTF) Arena</h5>
+                        <p>Gamified cybersecurity competition focusing on cryptography, web exploitation, and forensics</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="awareness">
+                    <img src="https://via.placeholder.com/350x250/808080/ffffff?text=Git+and+Open+Source" alt="Open Source Day">
+                    <div class="gallery-overlay">
+                        <span class="gallery-date">September 15, 2025</span>
+                        <h5>Git & Open Source Sprint</h5>
+                        <p>Hands-on workshop guiding freshmen through Git version control, GitHub, and Hacktoberfest</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved / CTA Section -->
+    <section class="cta-section section" id="join">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Join The Movement</span>
+                <h2 class="section-title">Get Involved With The Visionary Vault</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="cta-grid">
+                <div class="cta-card volunteer">
+                    <div class="cta-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <h3>Join as a Tech Member</h3>
+                    <p>Join NIET's most vibrant community of coders, designers, and innovators. Learn modern tech, build live projects, and compete in hackathons!</p>
+                    <ul class="cta-benefits">
+                        <li><i class="fas fa-check"></i> Access to all technical bootcamps & labs</li>
+                        <li><i class="fas fa-check"></i> Participate in internal hackathons & sprints</li>
+                        <li><i class="fas fa-check"></i> Collaborate on live deployed club projects</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 peer coding & interview mentorship</li>
+                    </ul>
+                    <a href="https://forms.google.com" target="_blank" class="btn btn-primary btn-block">
+                        <i class="fas fa-user-plus"></i> Register for Membership
+                    </a>
+                </div>
+                <div class="cta-card core-team">
+                    <div class="cta-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Core Team & Wing Leads</h3>
+                    <p>Lead specialized technical wings (Web Dev, AI/ML, CP, DevOps, UI/UX, PR & Events). Direct flagship hackathons and build your leadership legacy.</p>
+                    <ul class="cta-benefits">
+                        <li><i class="fas fa-check"></i> Executive leadership & team management roles</li>
+                        <li><i class="fas fa-check"></i> Direct interaction with industry speakers & sponsors</li>
+                        <li><i class="fas fa-check"></i> Priority recommendation for national tech events</li>
+                        <li><i class="fas fa-check"></i> Official Letters of Recommendation (LoR)</li>
+                    </ul>
+                    <a href="https://forms.google.com" target="_blank" class="btn btn-outline btn-block">
+                        <i class="fas fa-file-alt"></i> Apply for Core Team
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Announcements Box -->
+            <div class="announcements-box">
+                <div class="announcement-header">
+                    <i class="fas fa-bell"></i>
+                    <h4>Latest Club Announcements</h4>
+                </div>
+                <div class="announcement-content">
+                    <div class="announcement-item urgent">
+                        <span class="announcement-badge">Urgent</span>
+                        <p><strong>Recruitment Deadline:</strong> September 10, 2026 for 2026-27 Tech Member & Core Team Induction</p>
+                    </div>
+                    <div class="announcement-item">
+                        <span class="announcement-badge new">New</span>
+                        <p><strong>HackVault 2026:</strong> Problem statements and team registration portal now live</p>
+                    </div>
+                    <div class="announcement-item">
+                        <span class="announcement-badge info">Info</span>
+                        <p><strong>Weekly Tech Talk:</strong> Building Scalable Microservices this Friday in Seminar Hall 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,40 C150,100 350,0 500,50 C650,100 800,20 1000,60 C1200,100 1350,30 1440,50 L1440,100 L0,100 Z" fill="#0d1b3e"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="Logo.jpeg" alt="The Visionary Vault Logo">
+                        <h4>The Visionary Vault &bull; NIET</h4>
+                    </div>
+                    <p>The Visionary Vault is the official technical society of Noida Institute of Engineering and Technology (NIET), Greater Noida. We are dedicated to fostering tech excellence, hackathon culture, open-source innovation, and producing industry-ready software engineers.</p>
+                    <div class="footer-contact">
+                        <h5>Contact Us</h5>
+                        <p><i class="fas fa-envelope"></i> visionaryvault@niet.co.in</p>
+                        <p><i class="fas fa-phone"></i> +91-120-2323000</p>
+                        <p><i class="fas fa-phone"></i> +91-9876543210</p>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links & Portals</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fab fa-github"></i> GitHub Organization</a></li>
+                        <li><a href="#"><i class="fas fa-code"></i> LeetCode & CodeChef Chapter</a></li>
+                        <li><a href="#"><i class="fas fa-laptop-code"></i> Devpost Hackathons</a></li>
+                        <li><a href="#"><i class="fas fa-robot"></i> AI & Innovation Cell</a></li>
+                        <li><a href="#"><i class="fas fa-university"></i> NIET Official Website</a></li>
+                        <li><a href="#"><i class="fab fa-discord"></i> Community Discord Server</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Locate Us</h4>
+                    <div class="footer-address">
+                        <p><i class="fas fa-map-marker-alt"></i> Plot No. 19,<br>Knowledge Park II,<br>Greater Noida,<br>Uttar Pradesh 201306,<br>India</p>
+                    </div>
+                    <div class="footer-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.123456789!2d77.5!3d28.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMwJzAwLjAiTiA3N8KwMzAnMDAuMCJF!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 Noida Institute of Engineering and Technology. All rights reserved. | The Visionary Vault - Technical Club</p>
+                <div class="footer-social">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
